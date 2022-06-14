@@ -1,5 +1,6 @@
 pragma solidity >=0.7.0 <0.9.0;
 
+//Contract deployed at: 0x954D1DdC92EEd03bD45F7d9d32D08111929241FC
 /*
 Requirements:
 1. Creator creates a profile

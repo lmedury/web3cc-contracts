@@ -1,0 +1,377 @@
+
+[
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_text",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postType",
+                "type": "uint256"
+            }
+        ],
+        "name": "commentOnPost",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_text",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_cid",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_type",
+                "type": "uint256"
+            }
+        ],
+        "name": "createMediaPost",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_profile",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_metadata",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_avatar",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "_banner",
+                "type": "string"
+            }
+        ],
+        "name": "createProfile",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "string",
+                "name": "_text",
+                "type": "string"
+            }
+        ],
+        "name": "createTextPost",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            }
+        ],
+        "name": "likeMediaPost",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            }
+        ],
+        "name": "likeTextPost",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getMediaPostInfo",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postType",
+                "type": "uint256"
+            }
+        ],
+        "name": "getNumberOfComments",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getNumberOfCreators",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getNumberOfMediaPostsByCreator",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getNumberOfTextPostsByCreator",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postType",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_commentId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getPostComments",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            },
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getProfileInfo",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            },
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "_creatorId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_postId",
+                "type": "uint256"
+            }
+        ],
+        "name": "getTextPostInfo",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "numberOfCreators",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]
